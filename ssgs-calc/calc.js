@@ -40,7 +40,6 @@ async function main(){
         console.log("   4. Moltiplicazione");
         console.log("   5. Potenza");
         console.log("   6. Modulo");
-        console.log("   7. Fattoriale");
         console.log("   0. Fine");
         operazione = parseInt(await richiestaInput("Inserisci l'operazione che desideri effettuare: "));
         if(isNaN(operazione) || operazione < 0 || operazione > 7){
@@ -48,6 +47,7 @@ async function main(){
             rl.close();
             process.exit(1);
         }
+        let result;
         switch(operazione){
             case 1:
                 console.log(op.somma(a,b));
@@ -56,7 +56,8 @@ async function main(){
                 console.log(op.differenza(a,b));
                 break;
             case 3:
-                console.log(op.divisione(a,b));
+                if(op.divisione(a,b) == null) console.error('Impossibile effettuare divisione con denominatore = 0');
+                else console.log(op.divisione(a,b));
                 break;
             case 4:
                 console.log(op.moltiplicazione(a,b));
@@ -65,12 +66,9 @@ async function main(){
                 console.log(op.pow(a,b));
                 break;
             case 6:
-                a = op.swapsign(a);
-                b = op.swapsign(b);
+                a = op.sign(a);
+                b = op.sign(b);
                 console.log(a,b);
-                break;
-            case 7: 
-                console.log(op.fact(a));
                 break;
             default:
                 break;

@@ -5,23 +5,25 @@ function differenza(a,b){
     return a - b;
 }
 function divisione(a,b){
-    if(b == 0) throw new console.error();
+    if(b == 0) return null; //throw new Error, gestito come Errore
     return a / b;
 }
 function moltiplicazione(a,b){
     return a * b;
 }
 function pow(a,b){
-    if(b < 0 ) throw new error("Impossibile eseguire con il secondo termine < 0");
-    if(b == 0) return 1;
-    return a*pow(a,b-1);
+    return Math.pow(a,b);
+}
+function sign(a) {
+    return a > 0 ? a : -a;
 }
 function swapsign(a){
+    if(a == 0) return 0;
     return -a;
 }
 function fact(a){
-    if(a < 0) throw new error("Impossibile eseguire l'operazione con  il termine < 0")
-    if(a = 0) return 1;
+    if(a < 0) return null; // throw new Error, gestito come Errore
+    if(a == 0) return 1;
     return a * fact(a-1);
 }
 
@@ -32,5 +34,6 @@ module.exports = {
     divisione,
     pow,
     swapsign,
+    sign,
     fact
 };
