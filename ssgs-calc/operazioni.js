@@ -31,5 +31,6 @@ module.exports = {
     moltiplicazione,
     divisione,
     pow,
-    swapsign
+    swapsign,
+    fact
 };
