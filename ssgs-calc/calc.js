@@ -15,10 +15,11 @@ function richiestaInput(richiesta){
 }
 
 
-function main(){
-    const a = richiestaInput("Inserisci primo numero: ");
+async function main(){
+    const a = parseFloat(await richiestaInput("Inserisci primo numero: "));
     const b = 4;
     console.log(op.somma(a,b));
+    rl.close();
 }
 
 main();
