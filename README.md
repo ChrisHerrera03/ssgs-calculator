@@ -13,7 +13,6 @@ l’esecuzione.
 > * Dopo che l’utente ha inserito i parametri corretti, il programma restituisce il risultato
 dell’operazione e termina l’esecuzione con un saluto.
 
-❗ _(*)**Attenzione:** a differenza di quanto richiesto, i paramentri (due) sono da inserire all'inizio e poi si procede con la scelta dell'operazione che si vuole effettuare._
 
 
 ### Tra quelle aggiuntive, invece sono state scelte:
