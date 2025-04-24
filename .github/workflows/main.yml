@@ -1,0 +1,21 @@
+name: CI/CD CalJS
+
+on:
+  push: 
+    branches: [ main ]
+  pull_request:
+    branches: [ main]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
+      - name: use node.js
+        uses: actions/setup-node@v3
+      - name: Installa dipendenze
+        run: npm install
+      - name: Esegue i test
+        run: npm test
+  
