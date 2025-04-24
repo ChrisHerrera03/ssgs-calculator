@@ -23,4 +23,4 @@ segnalare l’errore e consentire all’utente di riprovare, anziché terminare 
 > * Mostrare un saluto random prima di terminare l’esecuzione
 
 
-[ Link alla pagina ](https://github.com/ChrisHerrera03/ssgs-calculator/blob/main/ssgs-calc/progetto_riferimento.pdf)
+[ Testo di riferimento del progetto ](https://github.com/ChrisHerrera03/ssgs-calculator/blob/main/ssgs-calc/progetto_riferimento.pdf)
