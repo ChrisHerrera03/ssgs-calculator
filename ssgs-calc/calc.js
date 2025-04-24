@@ -18,7 +18,8 @@ function richiestaInput(richiesta){
 
 
 async function main(){
-    console.log("Benvenuto, questa è la calcolatrice sviluppata in NodeJs richiesta -- CalcJs");
+    
+    console.log("  Benvenuto, questa è la calcolatrice semplice sviluppata in NodeJs richiesta -- CalcJs (a soli due numeri) ");
     let a, b;
     while(isNaN(a) || isNaN(b)){    
         a = parseFloat(await richiestaInput("Inserisci primo numero: "));
@@ -40,42 +41,46 @@ async function main(){
         console.log("   4. Moltiplicazione");
         console.log("   5. Potenza");
         console.log("   6. Modulo");
+        console.log("   7. Inserimento dei due numeri");
         console.log("   0. Fine");
         operazione = parseInt(await richiestaInput("Inserisci l'operazione che desideri effettuare: "));
-        if(isNaN(operazione) || operazione < 0 || operazione > 7){
-            console.error( "Scelta invalida");
-            rl.close();
-            process.exit(1);
+        while(isNaN(operazione) || operazione < 0 || operazione > 7){
+            operazione = parseInt(await richiestaInput("Inserisci l'operazione che desideri effettuare: "));
         }
-        let result;
         switch(operazione){
             case 1:
-                console.log(op.somma(a,b));
+                console.log("Somma pari a: ", op.somma(a,b));
                 break;
             case 2:
-                console.log(op.differenza(a,b));
+                console.log("Differenza pari a: ",op.differenza(a,b));
                 break;
             case 3:
                 if(op.divisione(a,b) == null) console.error('Impossibile effettuare divisione con denominatore = 0');
-                else console.log(op.divisione(a,b));
+                else console.log("Divisione pari a: ",op.divisione(a,b));
                 break;
             case 4:
-                console.log(op.moltiplicazione(a,b));
+                console.log("Moltiplicazione pari a: ",op.moltiplicazione(a,b));
                 break;
             case 5:
-                console.log(op.pow(a,b));
+                console.log("Potenza pari a: ",op.pow(a,b));
                 break;
             case 6:
                 a = op.sign(a);
                 b = op.sign(b);
-                console.log(a,b);
+                console.log("Moduli dei due numeri pari a: ",a,b);
+                break;
+            case 7:
+                do{    
+                    a = parseFloat(await richiestaInput("Inserisci primo numero: "));
+                    b = parseFloat(await richiestaInput("Inserisci secondo numero: "));
+                }while(isNaN(a) || isNaN(b))
                 break;
             default:
                 break;
 
         }
     }while(operazione != 0);
-    console.log("Grazie per aver usato la calcolatrice, a presto!");
+    console.log("Grazie per aver usato CalcJS, a presto!");
     rl.close();
 }
 
