@@ -21,6 +21,17 @@ jobs:
       - run: |
           cd ssgs-calc 
           npm run build
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
+      - name: use node.js
+        uses: actions/setup-node@v3
+      - name: Installa dipendenze
+        run: |
+          cd ssgs-calc
+          npm install
       - name: Esegue i test
         run: | 
           cd ssgs-calc
