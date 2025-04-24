@@ -22,3 +22,6 @@ segnalare l’errore e consentire all’utente di riprovare, anziché terminare 
 > * Mostrare un saluto random prima di terminare l’esecuzione
 
 [ Testo di riferimento del progetto ](https://github.com/ChrisHerrera03/ssgs-calculator/blob/main/ssgs-calc/progetto_riferimento.pdf)
+
+## Scopo del progetto:
+Creazione di una calcolatrice in NodeJs con il fine di ottimizzare l'utilizzo di GitHub, con cui tramite GitHub Actions si può ottimizzare build, test e deploy
