@@ -1,6 +1,6 @@
 # SSGS-Calculator
 ## Creazione di una calcolatrice in Node.JS
-###📋 Il progetto è stato sviluppato in **Node.JS** e contiene le seguenti funzionalità richieste:
+### 📋 Il progetto è stato sviluppato in **Node.JS** e contiene le seguenti funzionalità richieste:
 
 > * L’interazione con l’utente avviene attraverso la riga di comando.
 > * Al lancio, il programma mostra un messaggio di benvenuto e la lista delle operazioni
