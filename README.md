@@ -22,5 +22,4 @@ dell’operazione e termina l’esecuzione con un saluto.
 segnalare l’errore e consentire all’utente di riprovare, anziché terminare l’esecuzione).
 > * Mostrare un saluto random prima di terminare l’esecuzione
 
-
 [ Testo di riferimento del progetto ](https://github.com/ChrisHerrera03/ssgs-calculator/blob/main/ssgs-calc/progetto_riferimento.pdf)
