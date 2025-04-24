@@ -11,7 +11,8 @@
     "jest": "^29.7.0"
   },
   "scripts": {
-    "test": "jest --coverage --coverageReports=text --coverageReports=json"
+    "test": "jest --coverage --coverageReports=text --coverageReports=json",
+    "build": "node calc.js"
   },
   "keywords": [],
   "author": "",
