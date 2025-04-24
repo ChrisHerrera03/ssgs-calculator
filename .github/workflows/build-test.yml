@@ -35,7 +35,7 @@ jobs:
       - name: Esegue i test
         run: | 
           cd ssgs-calc
-          npm test -- --coverage --coverageReporters=text
+          npm test -- --coverage --coverageReporters=text --coverageDirectory=coverage
 
 
       
