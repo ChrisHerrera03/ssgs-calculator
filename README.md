@@ -21,4 +21,6 @@ Di conseguenza, questa osservazione è ancora da applicare e il progetto è modi
 > * Migliorare il comportamento del programma in caso di parametro errato (ad esempio,
 segnalare l’errore e consentire all’utente di riprovare, anziché terminare l’esecuzione).
 > * Mostrare un saluto random prima di terminare l’esecuzione
+
+
 [Link alla pagina] (https://github.com/ChrisHerrera03/ssgs-calculator/blob/main/ssgs-calc/progetto_riferimento.pdf)
