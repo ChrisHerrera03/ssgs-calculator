@@ -19,8 +19,8 @@ jobs:
           cd ssgs-calc
           npm install
       - run: |
-        cd ssgs-calc 
-        npm run build
+          cd ssgs-calc 
+          npm run build
       - name: Esegue i test
         run: | 
           cd ssgs-calc
