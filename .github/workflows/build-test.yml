@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v4
       - name: Installa dipendenze
         run:  npm install
-      - run: npm run build
+      - run: npm run start
       - name: Esegue i test
         run: npm test
       - name: Upload coverage report
