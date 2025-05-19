@@ -9,34 +9,19 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./ssgs-calc
     steps:
       - name: checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: use node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
       - name: Installa dipendenze
-        run: |
-          cd ssgs-calc
-          npm install
-      - run: |
-          cd ssgs-calc 
-          npm run build
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout repository
-        uses: actions/checkout@v3
-      - name: use node.js
-        uses: actions/setup-node@v3
-      - name: Installa dipendenze
-        run: |
-          cd ssgs-calc
-          npm install
+        run:  npm install
+      - run: npm run build
       - name: Esegue i test
-        run: | 
-          cd ssgs-calc
-          npm test
+        run: npm test
 
 
       
