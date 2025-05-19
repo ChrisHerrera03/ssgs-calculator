@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "jest --coverage --coverageReporters=lcov --coverageDirectory=coverage",
-    "build": "node app.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "Christopher Herrera, Giulia Rebaudo",
