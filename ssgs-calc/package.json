@@ -15,7 +15,7 @@
     "build": "node app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Christopher Herrera, Giulia Rebaudo",
   "license": "ISC",
-  "description": ""
+  "description": "Calcolatrice fatta in NodeJs"
 }
